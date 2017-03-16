@@ -7,6 +7,6 @@ IFS=':'
 for d in $PYTHONPATH ; do
   find $d -name '*.py'
 done
-) | grep -E '^./src/|tensorflow|numpy|scipy|matplotlib|scikitlearn' >flist
+) | grep -E '^./src/|tensorflow|numpy|scipy|matplotlib|scikit-learn' >flist
 
 ctags --python-kinds=-i `cat flist`
