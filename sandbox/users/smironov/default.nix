@@ -26,6 +26,7 @@ let
       pyqt5
       pandas
       scikitlearn
+      hyperopt
     ];
 
     shellHook = with pkgs; ''
